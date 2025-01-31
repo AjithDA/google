@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .search-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .search-bar {
+      width: 450px;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #dfe1e5;
+      border-radius: 24px;
+      outline: none;
+      box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+      transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    }
+
+    .search-bar:focus {
+      border-color: #4285f4;
+      box-shadow: 0 1px 8px rgba(32, 33, 36, 0.4);
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .btn {
+      background-color: #f8f9fa;
+      border: 1px solid #dfe1e5;
+      border-radius: 4px;
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+      transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .btn:hover {
+      background-color: #f1f3f4;
+      box-shadow: 0 1px 4px rgba(60, 64, 67, 0.4);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 14px;
+      color: #5f6368;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #1a73e8;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo Section -->
+  <div class="logo">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="My Search Logo" width="272" height="92">
+  </div>
+
+  <!-- Search Section -->
+  <div class="search-container">
+    <input type="text" class="search-bar" placeholder="Search here...">
+    <div class="button-container">
+      <button class="btn">Search</button>
+      <button class="btn">I'm Feeling Lucky</button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Settings</a>
+    </p>
+  </footer>
+</body>
+</html>
